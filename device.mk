@@ -43,3 +43,7 @@ PRODUCT_PACKAGES += \
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy)
+
+# VNDK
+PRODUCT_PACKAGES += \
+    vndk-sp
