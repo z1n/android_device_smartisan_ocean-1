@@ -35,6 +35,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 # Haters gonna hate..
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Filesystem
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
