@@ -39,3 +39,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="ocean-user 8.1.0 OPM1.171019.026 147 dev-keys"
 
 BUILD_FINGERPRINT := SMARTISAN/oxford/oxford:8.1.0/OPM1.171019.026/1547486438:user/dev-keys
+
+# Verity
+PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/7c4000.sdhci/by-name/system
+PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc/7c4000.sdhci/by-name/vendor
+$(call inherit-product, build/target/product/verity.mk)
